@@ -23,3 +23,8 @@ jobs:
 
     - name: Build
       run: go build -v dumpling/cmd/dumpling/main.go
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: main
+        path: main
